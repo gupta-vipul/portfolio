@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="header-home" id="home">
+    <!-- https://portfolio-gupta-vipul.vercel.app/ -->
+    <header class="header-home">
         <nav class="navbar d-flex">
             <div class="navbar-logo"><span>{</span>Vipul_<span>}</span></div>
             <!-- <div class="navbar-icon"><i class="fa fa-bars"></i></div> -->
@@ -24,33 +25,61 @@
             </div>
         </nav>
     </header>
-    <section class="hero-section container d-flex">
-        <div>
-            <div class="hero-main-heading">Front-End Developer</div>
+    <section id="home" class="hero-section container d-flex">
+        <div class="hero-section-text d-flex">
+            <div class="hero-main-heading">Front-End Web Developer</div>
             <div>Hi, I am Vipul Gupta, a passionate & skilled front-end developer based in Rajasthan, India.</div>
+            <div class="skills-text">Skills</div>
+            <div class="hero-section-skills d-flex">
+                <div class="skills-logo d-flex"><img src="/images/html.png" alt="HTML" title="html"></div>
+                <div class="skills-logo d-flex"><img src="/images/css-3.png" alt="CSS" title="css"></div>
+                <div class="skills-logo d-flex"><img src="/images/java.png" alt="JAVA" title="Java"></div>
+                <div class="skills-logo d-flex"><img src="/images/git.png" alt="GIT" title="git"></div>
+                <div class="skills-logo d-flex"><img src="/images/github.png" alt="GITHUB" title="github"></div>
+            </div>
         </div>
-        <div><img src="https://cdn1.iconfinder.com/data/icons/facely-metapeople-3d-avatar-set/512/17._Designer.png" alt="heroImage"></div>
+        <div><img src="/images/hero-image.png" alt="heroImage"></div>
     </section>
-    <!-- <section>
-        about me
+    <!-- Hero section ends here -->
+    <!-- Anout me section starts here-->
+    <!-- <section id="about-me" class="container">
+        <div class="about-me-text">ABOUT ME</div>
+        <div class="aboutme-card d-flex">
+            <div>something about me</div>
+            <div class="aboutme-card-image"><img src="/images/Developer.png" alt=""></div>
+        </div>
     </section> -->
+    <!-- Ends here -->
     <!-- Project start here -->
     <section id="projects" class="bg-primary-shade">
         <div class="container">
             <div class="projects-text">PROJECTS</div>
             <div class="project-card-grid d-flex">
                 <div class="project-card">
-                    <img src="/images/airbnb-project1.png" alt="airbnb-clone">
+                    <a href="https://airbnb-clone.vipulgupta21.repl.co/" target="_blank">
+                        <img src="/images/airbnb-project1.png" alt="airbnb-clone">
+                    </a>
                     <div class="card-container">
                     <h4><b>Airbnb Clone</b></h4> 
                     <p>I have created clone of apartment rental provider website using HTML & CSS</p> 
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="/images/food-ordering-project2.png" alt="airbnb-clone">
+                    <a href="https://gupta-vipul.github.io/static-web-project-0/" target="_blank">
+                        <img src="/images/food-ordering-project2.png" alt="food-landing-page">
+                    </a>
                     <div class="card-container">
                     <h4><b>Food ordering website</b></h4> 
                     <p>I have created this food ordering landing page website using HTML & CSS</p> 
+                    </div>
+                </div>
+                <div class="project-card">
+                    <a href="https://login-pages.vipulgupta21.repl.co/index.html" target="_blank">
+                        <img src="/images/login-register-project3.png" alt="login-register form">
+                    </a>
+                    <div class="card-container">
+                    <h4><b>Login-Register Form</b></h4> 
+                    <p>Simple & clean login & Register from using HTML form and required CSS.</p> 
                     </div>
                 </div>
             </div>
