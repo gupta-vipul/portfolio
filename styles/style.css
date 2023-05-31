@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;700&display=swap');
+/* 
+colors
+#0084ff (blueish)
+#1f1e1e (blackish)
+
+font size 
+root 16px
+heading - 2em
+sub-heading - 1.120em 
+context - 1em
+
+font family
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+
+font weight 
+regular 400
+bold 800
+
+*/
+
+/* 
+    -------------
+    CSS RESET 
+    -------------    
+*/
+* {
+    box-sizing: border-box;
+}
+
+/* 
+    --------------
+    Defining root variables
+    --------------
+*/
+
+:root {
+    --clr-primary: #ffffff;
+    --clr-secondary: #363636;
+    --clr-accent: #0084ff;
+    --clr-border: #cccccc;
+
+    --fw-400: 400;
+    --fw-800: 800;
+
+    --fs-body: 16px;
+    --fs-heading: 2em;
+    --fs-subheading: 1.5em;
+    --fs-content: 1em;
+
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Pacifico', cursive;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+}
+/* 
+    --------------
+    Utility classes
+    --------------
+*/
+.text-primary {
+    color: var(--clr-primary);
+}
+.text-secondary {
+    color: var(--clr-secondary);
+}
+.text-accent {
+    color: var(--clr-accent);
+}
+.font-regular {
+    font-weight: var(--fw-400);
+}
+.font-bold {
+    font-weight: var(--fw-800);
+}
+.bg-primary {
+    background-color: var(--clr-primary);
+}
+.bg-secondary {
+    background-color: var(--clr-secondary);
+}
+.d-flex {
+    display: flex;
+}
+
+/* 
+    -----------
+    layout
+    -----------
+*/
+.container {
+    margin: 0px auto;
+    padding: 4rem 1rem;
+    max-width: 62.5rem;
+    outline: 1px solid red;
+}
+
+
+/* 
+    --------------
+    Header section
+    --------------
+*/
+
+.header-home {
+    border-bottom: 1px solid var(--clr-border);
+    padding: 10px 40px;
+    box-shadow: 0px 0px 10px 0px var(--clr-border);
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: var(--clr-secondary);
+    font-weight: var(--fw-800);
+    font-size: var(--fs-subheading);
+}
+
+.navbar-logo span {
+    color: var(--clr-accent);
+}
+
+.navbar-item {
+    margin-left: 2em;
+    list-style: none;
+    font-size: var(--fs-content);
+    font-weight: var(--fw-800);
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: var(--clr-secondary);
+}
+
+.navbar-item a:hover {
+    color: var(--clr-accent);
+    transition: 500ms;
+}
+
+/* 
+    ------------------
+    contact
+    ------------------
+*/
+
+
+/* 
+    -------------------
+    Footer
+    -------------------
+*/
+
+.footer {
+    height: 50px;
+}
+
+.footer-content {
+    font-weight: var(--fw-800);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
