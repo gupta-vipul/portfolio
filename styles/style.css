@@ -383,6 +383,16 @@ body {
         background-color: var(--clr-accent);
     }
 
+    /* Project */
+    .project-card-grid {
+        flex-direction: column;
+        row-gap: 20px;
+        /* width: 100%; */
+    }
+
+    .project-card {
+        width: 100%;
+    }
     /* Contact Section */
 
     .contact {
