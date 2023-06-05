@@ -132,6 +132,7 @@ body {
 
 .navbar-icon {
     font-size: var(--fs-subheading);
+    cursor: pointer;
 }
 
 .navbar-logo {
@@ -250,6 +251,7 @@ body {
 
 .aboutme-card-image {
     width: 50%;
+    align-items: center;
 }
 
 .aboutme-card-image img {
@@ -413,6 +415,20 @@ body {
         text-align: center;
     }
 
+    /* About me */
+
+    .aboutme-card {
+        flex-direction: column-reverse;
+    }
+
+    .aboutme-card-text {
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .aboutme-card-image {
+        width: 100%;
+    }
     /* Project */
     .project-card-grid {
         flex-direction: column;
@@ -439,5 +455,6 @@ body {
 @media screen and (min-width: 600px) {
     .navbar-icon {
         display: none;
+        cursor: pointer;
     }
 }
