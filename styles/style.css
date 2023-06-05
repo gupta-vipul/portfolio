@@ -28,6 +28,7 @@ bold 800
 * {
     box-sizing: border-box;
     /* outline: 1px solid red; */
+    scroll-behavior: smooth;
 }
 
 /* 
@@ -102,7 +103,6 @@ body {
     margin: 0px auto;
     padding: 4rem 1rem;
     max-width: 62.5rem;
-    /* outline: 1px solid red; */
 }
 
 /* 
@@ -183,14 +183,14 @@ body {
 .hero-section-text {
     flex-direction: column;
     row-gap: 20px;
-    justify-content: space-around;
 }
 
 .hero-section-skills {
     column-gap: 10px;
+    flex-wrap: wrap;
 }
 
-.skills-text {
+.hero-skills {
     font-weight: var(--fw-800);
     font-size: var(--fs-subheading);
     color: var(--clr-secondary);
@@ -227,38 +227,47 @@ body {
     ------------------
 */
 
-.about-me-text {
+#about-me p {
     color: var(--clr-accent);
     font-weight: var(--fw-800);
     font-size: var(--fs-subheading);
-    padding-bottom: 20px;
 }
 
 .aboutme-card {
     background-color: var(--clr-primary);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+    box-shadow: 0px 4px 8px 5px rgba(0,0,0,0.2);;
     width: 100%;
-    border-radius: 10px;    
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.aboutme-card-text {
+    line-height: 1.8;
+    text-align: justify;
+    padding-right: 20px;
+    width: 50%;
+}
+
+.aboutme-card-image {
+    width: 50%;
 }
 
 .aboutme-card-image img {
-    width: 50%;
-    border: 1px solid red;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    padding: 10px;
 }
+
 /* 
     ------------------
     project
     ------------------
 */
 
-.projects-text {
+.project-head {
     color: var(--clr-accent);
     font-weight: var(--fw-800);
     font-size: var(--fs-subheading);
-    padding-bottom: 20px;
 }
 
 .project-card {
@@ -270,7 +279,8 @@ body {
 }
 
 .project-card-grid {
-    column-gap: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .project-card img {
@@ -381,6 +391,26 @@ body {
         border: 5px solid var(--clr-secondary);
         border-radius: 50%;
         background-color: var(--clr-accent);
+    }
+
+    .hero-main-heading {
+        text-align: center;
+        font-size: 10vw;
+        margin-top: 10px;
+    }
+    
+    .hero-skills {
+        text-align: center;
+    }
+
+    .hero-section-skills {
+        justify-content: center;
+        align-items: center;
+        row-gap: 12px;
+    }
+
+    .hero-description {
+        text-align: center;
     }
 
     /* Project */
